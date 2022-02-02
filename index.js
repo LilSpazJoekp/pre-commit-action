@@ -34,8 +34,8 @@ function addToken(url, token) {
 
 async function main() {
     await core.group('install pre-commit', async () => {
-        await exec.exec('python3', ['-m', 'pip', 'install', 'pre-commit']);
-        await exec.exec('python3', ['-m', 'pip', 'freeze', '--local']);
+        await exec.exec('pip3', ['install', 'pre-commit']);
+        await exec.exec('pip3', ['freeze', '--local']);
     });
 
     const args = [
