@@ -1,4 +1,4 @@
-name: pre-commit
+name: pre-commit-action
 description: run pre-commit and optionally commit back to the pull request
 inputs:
   extra_args:
