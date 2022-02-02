@@ -16,4 +16,3 @@ dist/index.js: index.js node_modules
 	# terrible hack to prevent lookup of `navigator`
 	# if someone knows the correct way to use webpack, PRs welcome!
 	sed -i 's/\bnavigator\b/({})/g' $@
-
